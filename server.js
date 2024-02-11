@@ -11,5 +11,6 @@ const app = express();
 app.use(express.json()); //convert to useable format(parse)
 app.use(express.urlencoded({extended:false}));
 
-app.use('/api/todos' , require("../routes/todotRoutes"));
+app.use('/api/todos' , require("../routes/todoRoutes"));
+app.use('/api/todos',require("../routes/userRouteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"))
 app.listen(port, () => console.log(`Server started on port ${port}`));
